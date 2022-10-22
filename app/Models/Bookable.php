@@ -10,6 +10,8 @@ class Bookable extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['title', 'description'];
+
     public function bookings()
     {
         return $this->hasMany(Booking::class);

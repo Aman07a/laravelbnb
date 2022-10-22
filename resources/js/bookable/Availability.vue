@@ -12,6 +12,7 @@
                     name="from"
                     class="form-control form-control-sm"
                     placeholder="Start date"
+                    v-model="from"
                 />
             </div>
 
@@ -22,6 +23,7 @@
                     name="to"
                     class="form-control form-control-sm"
                     placeholder="End date"
+                    v-model="to"
                 />
             </div>
         </div>
@@ -29,6 +31,17 @@
         <button class="btn btn-secondary btn-block">Check!</button>
     </div>
 </template>
+
+<script>
+export default {
+    data() {
+        return {
+            from: null,
+            to: null,
+        };
+    },
+};
+</script>
 
 <style scoped>
 label {

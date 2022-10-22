@@ -35,8 +35,7 @@ class BookableFactory extends Factory
     public function definition()
     {
         return [
-            // 'title' => $this->faker->city . ' ' . Arr::random($this->suffix),
-            'title' => Arr::random($this->suffix),
+            'title' => $this->faker->city . ' ' . Arr::random($this->suffix),
             'description' => $this->faker->text()
         ];
     }

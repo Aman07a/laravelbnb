@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Database\Seeders\BookingTableSeeder;
+use Database\Seeders\ReviewsTableSeeder;
 use Database\Seeders\BookablesTableSeeder;
 
 class DatabaseSeeder extends Seeder
@@ -16,5 +18,6 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(BookablesTableSeeder::class);
         $this->call(BookingTableSeeder::class);
+        $this->call(ReviewsTableSeeder::class);
     }
 }
